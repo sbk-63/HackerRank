@@ -1,0 +1,15 @@
+public static void plusMinus(List<Integer> arr) {
+        int neg = 0, zer = 0, pos = 0;
+        for(int i : arr){
+            if(i < 0)
+                neg++;
+            else if(i == 0)
+                zer++;
+            else 
+                pos++;
+        }
+        int n = arr.size();
+        System.out.printf("%.6f\n", (double)pos/n);
+        System.out.printf("%.6f\n", (double)neg/n);
+        System.out.printf("%.6f\n", (double)zer/n);
+    }

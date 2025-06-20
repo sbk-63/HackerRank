@@ -1,0 +1,12 @@
+    public static int simpleArraySum(List<Integer> ar) {
+        int count = 0;
+        for(int i = 0; i < ar.size(); i++){
+            count += ar.get(i);
+        }
+        return count;
+    }
+
+// using lambda expressions
+public static int simpleArraySum(List<Integer> ar) {
+    return ar.stream().reduce(0, (a,b)-> a+b);
+}
