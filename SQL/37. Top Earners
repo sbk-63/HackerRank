@@ -1,0 +1,1 @@
+SELECT salary * months, COUNT(salary * months) FROM employee GROUP BY (salary * monthS) DESC LIMIT 1;
