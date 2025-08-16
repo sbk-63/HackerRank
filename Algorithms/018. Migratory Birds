@@ -1,0 +1,9 @@
+    public static int migratoryBirds(List<Integer> arr) {
+        int b = 1;
+        for(int i = 2; i <= 5; i++){
+            if(Collections.frequency(arr, b) < Collections.frequency(arr, i)){
+                b = i;
+            }
+        }
+        return b;
+    }
